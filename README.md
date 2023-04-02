@@ -1,4 +1,4 @@
-# SpaceWeed-
+# SpaceGrass
 Образцовое решение финального кейса Московской предпрофессиональной олимпиады 2022-2023.
 ![alt text](http://predprof.olimpiada.ru/upload/images/Glavnaya/2020-2021/SYS_9994.jpg)
 Для запуска необходимо установить зависисмости: 
