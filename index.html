@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fuel and Cost Data</title>
+    <style>
+        /* Style the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Style the form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style the output */
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fuel and Cost Data</h1>
+    <form action="/data/" method="GET">
+        <label for="fly-dist">Fly Distance (in km):</label>
+        <input type="text" id="fly-dist" name="Fly_Dist">
+
+        <label for="sp-for-client">SP For Client:</label>
+        <input type="text" id="sp-for-client" name="SP_ForClient">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Results:</h2>
+    <p>Fly Distance: {fly-dist}</p>
+    <p>SP For Client: {sp-for-client}</p>
+    <p>AllFuel: {AllFuel}</p>
+    <p>All_Oxi: {All_Oxi}</p>
+    <p>All_cost: {All_cost}</p>
+    <p>day_grow_var + day_no_grow_var: {day_grow_var+day_no_grow_var}</p>
+</body>
+</html>
